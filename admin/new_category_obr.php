@@ -9,7 +9,6 @@ include "data_base.php";
 $sql = "UPDATE category_menu SET name='$category' WHERE id='$id_category'";
 $result = $data_base->query( $sql );
   //return $result;
-
  
 if($result == true){
   echo "ok";
@@ -17,4 +16,3 @@ if($result == true){
 } else {
   echo "don`t ok";
 }
-
