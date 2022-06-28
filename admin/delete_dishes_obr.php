@@ -6,7 +6,6 @@ $user = $_SESSION['user'];
 
 $id_delete = $_GET['id_delete'];
 
-
 //if (isset($_GET['id_delete'])) { //проверяем, есть ли переменная
     //удаляем строку из таблицы
   $sql = "DELETE FROM dishes WHERE id='$id_delete'";
@@ -20,4 +19,4 @@ $id_delete = $_GET['id_delete'];
     /*print_r($id_delete);
     print_r($sql);
     print_r($result);*/
-  }
+  };
