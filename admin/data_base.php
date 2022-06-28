@@ -1,5 +1,4 @@
 <?php
-
 $ip_db = "localhost";
 $name_db = "b9160422_1";
 $pass_db = "Admin1!";
