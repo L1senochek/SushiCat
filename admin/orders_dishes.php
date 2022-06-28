@@ -13,9 +13,6 @@ if( isset($user['id_manager']) ) {
   echo "<a href='orders_dishes.php'><button> Просмотр заказов </button></a>";
 }
 
-
-
-
 include"data_base.php";
 $sql = "SELECT * FROM orders";
 $result = $data_base->query( $sql );
@@ -37,7 +34,6 @@ function thead( $arr ){
     }
   echo "</tr>";
 }
-
 function tbody( $arr ){
   echo "<tr>";
     foreach( $arr as  $value) {
@@ -45,9 +41,5 @@ function tbody( $arr ){
     }
   echo "</tr>";
 }
-
-
 ?>
 <br>-------------------------------------------------------------------------
-
-
