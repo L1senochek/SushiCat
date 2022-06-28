@@ -2,7 +2,6 @@
 session_start(); 
 header("Content-type: text/html; charset=utf-8");
 
-
 $login = htmlspecialchars($_POST['login']);
 $password = htmlspecialchars($_POST['password']);
 include "data_base.php";  
