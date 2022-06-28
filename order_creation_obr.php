@@ -21,7 +21,6 @@ include"data_base.php";
     $order_composition = $order_composition.$dishes['dish_name']." ".$cart_list[$dishes['id']]." шт".", ";
     endwhile;
      
-    
     $order_composition = substr($order_composition,0,-2);
     //print_r($order_composition); 
 //--------------------------------------------------------------------------  
@@ -52,7 +51,6 @@ include"data_base.php";
   echo "<p class='order_dont_creation' >Заказ не оформлен! Заполните обязательные поля!</p>";
   header("location: order_creation.php");
 }
-
 ?>
 </div>
 <?php
