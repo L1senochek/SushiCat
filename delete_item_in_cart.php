@@ -5,7 +5,6 @@ $cart_list = $_SESSION["cart_list"];
 $id_item = $_GET["delete"]; // [25]
 $item = $_SESSION['cart_list'][$id_item] ; //1
 
-
 if ( $item > 1){ //если количество > 1
 
  $cart_list[$id_item] = $item -1;
