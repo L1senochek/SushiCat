@@ -69,17 +69,12 @@ session_start();
           добавить
         </a>--><!--<a href="cart.php?dishes['id']=<?php// echo dished['id']?>">добавить</a>-->
       </div> 
-    </div>
-  
+    </div>  
 <?php
-  
   //print_r($_SESSION['cart_list']);
-
-  }?>
-  
+}?>
   <!--data-* Глобальные атрибуты образуют класс атрибутов, называемых пользовательскими атрибутами данных, которые позволяют обмениваться проприетарной информацией между HTML и его представлением DOM посредством сценариев.
   -->
-  
   <!--<sript src="/resource/javascript/basket.js"></sript>-->
 <?php
 /*include "cart.php";*/
