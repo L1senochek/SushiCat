@@ -3,7 +3,6 @@ $title = "Главная";
   $style = "resource/CSS/index.css";
   include "header.php";
   include "data_base.php";
-  
 ?>  
   <div class="block_map">
   <div class= "map" id="map" >
@@ -27,9 +26,8 @@ $title = "Главная";
   </div>
   </div>
 <?php
-  
 
   include "footer.php";
   
-  ?><!--
-<sript src="basket_test.js"></sript> -->
+  ?>
+<!-- <sript src="basket_test.js"></sript> -->
