@@ -1,7 +1,6 @@
 </main>
 <footer class="footer">
   <link rel="stylesheet" href="resource/CSS/footer.css">
-  
   <div class="footer_right">
     <a href="#"> </a>
   </div>
@@ -12,8 +11,6 @@
       <a href="https://www.instagram.com"><img src="resource/emblems/instagram.jpg" alt=""></a>
     </div>
   </div>
-  
-
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="resource/javascript/delete_cart.js"></script>
