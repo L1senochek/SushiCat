@@ -1,5 +1,4 @@
 $(function(){
-  
   $('.cart_delete').click(function(){
     let current_id = $(this).attr('data-id');
     cart_value.html(counter++); //.html()перезаписывает html разметку
@@ -10,6 +9,5 @@ $(function(){
     //alert("Data Loaded: " + data);
     cart_value.html(data); //data -ответ, перезаписываю то что пришло с api.php
     })
-  });
-  
+  }); 
 });
