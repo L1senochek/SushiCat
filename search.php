@@ -29,20 +29,17 @@ while( $dishes = $result->fetch_assoc() ){ ?>
     </div>
   
   <?php
-  if($dishes == true){
-  
-} else {
-  
-  echo "<p class='order_dont_creation' >Блюдо не найдено!</p>";
-  
-}
-  /*if(empty($cart_list)){
-    echo '<div class="cart_empty"> Корзина пустая <br>
-      <image src="resource/emblems/cart_empty.jpg"></image>
-    </div> ';
-  }*/
-  }
-?>
+       if($dishes == true){
+     } else {
+       echo "<p class='order_dont_creation' >Блюдо не найдено!</p>";
+     }
+       /*if(empty($cart_list)){
+         echo '<div class="cart_empty"> Корзина пустая <br>
+           <image src="resource/emblems/cart_empty.jpg"></image>
+         </div> ';
+       }*/
+     };
+   ?>
 </div>
 <script src="resource/javascript/main.js"></script>
 <?php
