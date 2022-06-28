@@ -17,8 +17,7 @@ $result = $data_base->query( $sql );
 //echo($result_category);
 ?>
 <div class="new_dishes_bgc">
-  <form class="new_dishes_bgc_form" action="new_dishes_obr.php" method="post" enctype="multipart/form-data" >
-    
+  <form class="new_dishes_bgc_form" action="new_dishes_obr.php" method="post" enctype="multipart/form-data" >    
     <p>
         <label> Выберите категорию <br>
           <select name="select_category_menu" required>
@@ -27,47 +26,36 @@ $result = $data_base->query( $sql );
             $id = $category["id"];
             $name = $category["name"];
             echo "<option value='$id'> $name </option>";
-          }       
-            
+          }                   
     ?>
           </select>
         </label>
-      </p>
-      
+      </p>   
     <p>
       <label> Название блюда: <br>
         <textarea name="dish_name" maxlength="150" required></textarea>
       </label>
-    </p>
-    
+    </p>   
     <p>
       <label> Состав: <br>
         <textarea name="ingredients" maxlength="1000" required></textarea>
       </label>
-    </p>
-    
+    </p>   
     <p>
       <input type="file" accept="image_dished/*" name="image" required>
-    </p>
-    
-    
-    
+    </p>   
     <p>
       <label> Вес: <br>
         <textarea name="weight" maxlength="10" required> </textarea>  г
       </label>
-    </p>
-    
+    </p>  
     <p>
       <label> Цена: <br>
         <textarea name="price" maxlength="10" required> </textarea>  руб
       </label>
     </p>
-    <button> Загрузить </button>
-    
+    <button> Загрузить </button>    
   </form>
 </div>
-
 <?php
-
-  
+ 
