@@ -22,8 +22,7 @@ $ingredients = htmlspecialchars($_POST['ingredients']); //Преобразует
   $price = $_POST['price'];
   
   $weight = $_POST['weight'];
-  
-  
+    
   include "data_base.php";
   
   function addDishes( $dish_name, $ingredients, $image_name, $category, $price, $weight){
@@ -33,7 +32,6 @@ $ingredients = htmlspecialchars($_POST['ingredients']); //Преобразует
     $result = $data_base->query( $sql );
     return $result;
   }
-  
   $result = addDishes( $dish_name, $ingredients, $image_name, $category, $price, $weight);
   
   //var_dump($result);
@@ -41,10 +39,8 @@ $ingredients = htmlspecialchars($_POST['ingredients']); //Преобразует
   
   if($result == true){
     echo "ok";
-    //exit("добавлена");
-    
+    //exit("добавлена");    
   } else {
     echo "don`t ok";
     //("не добавлена");
   }
-
