@@ -7,23 +7,15 @@ form_auth_admin.addEventListener("submit", async function(event){ //регист
     method: "POST", //метод отправки
     body: fd //данные отправки 
   };
-
-
 //ассинхронный запрос - запрос улетает, а сам скрипт продолжает работать  
-  
-  
+ 
   //встроенная функция fetch отправляет ассинхронный запрос на сервер
   let response = await fetch(this.action, options); //1 аргумент url, 2 аргумент объект с настройками //Ключевое слово await заставит интерпретатор JavaScript ждать до тех пор, пока промис справа от await не выполнится.
   let text = await response.text(); // получаем ответ от сервера в виде текста
   if(text == "Авторизация прошла успешно"){
     alert(text);
-    location.href = "account.php";
-    
+    location.href = "account.php";    
   }else{
     alert(text);
   }
 });
-
-
-
-
