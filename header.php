@@ -13,7 +13,6 @@ session_start();
 </head>
 <body >
   <header class="header">
-    
     <nav class="left">
       <div class="logotype">
         <a href="index.php" >
@@ -25,14 +24,12 @@ session_start();
         <a href="discounts.php" class="href-discounts"> скидки <br>
           <img src="resource/emblems/cat1.jpg" width="75px">
         </a>
-      </div>
-              
+      </div>   
       <div class="delivery">
         <a href="delivery.php" class="href-delivery"> о доставке <br>
         <img src="resource/emblems/cat2.jpg" width="75px"></a>
       </div>
     </nav>
-    
     <nav class="right">
       <!----------->
       <div class="search_dishes">
@@ -41,12 +38,8 @@ session_start();
           <button id="button_id" class="button_id"><img src="resource/emblems/cat3.jpg" width="75px"></button>
         </form>
         <div class="dishes_search_list">
-          
         </div>
-        
       </div>
-      
-      
       <!----------->
       <!--<div class="smalcartshop">
         <strong>Товаров в корзине:</strong><?php//$dishes['cart_count']?> шт.
@@ -73,24 +66,5 @@ session_start();
         </a>
       </div>
     </nav>
-    
-    
-    
-    
-    <!------------------------------------------------->
-    
-    <?php
-    
-    ?>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  </header>
-  <main class="main"  >    
+</header>
+  <main class="main">    
