@@ -1,0 +1,22 @@
+.footer{
+  height: 100px;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  left: 0;
+  position: static;
+}
+.social-link{
+  display:flex;
+  /*margin: ;*/
+  margin: 15px 20px;
+
+}
+
+.footer_left, .footer_right{
+  /*margin: auto;*/
+  
+}

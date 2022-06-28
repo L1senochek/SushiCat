@@ -1,0 +1,12 @@
+.cart{
+  display: flex;
+}
+.break{
+  flex-basis: 100%;
+  height: 0;
+  
+}
+.cart_main{
+  display: inline-block;
+  margin-left: 5%;
+}

@@ -1,0 +1,14 @@
+.category li{
+  display: inline;
+}
+.news-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.breadcrumbs{
+  font-weight: bold;
+  pointer-events: none; 
+  text-decoration: none;
+}
