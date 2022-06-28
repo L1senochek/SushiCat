@@ -14,9 +14,6 @@ $style = "resource/CSS/header.css";
   <div class="break"></div>
 <?php 
 
-
-
-
   $cart_list = $_SESSION['cart_list']; //массив из сессии
   if(empty($cart_list)){
     echo '<div class="cart_empty"> Корзина пустая <br>
@@ -35,10 +32,7 @@ $style = "resource/CSS/header.css";
   
   //print_r($cart_list);
   ?>
-  
-  
-
-  
+ 
   <div class="cart_main">
     <div class="cart_image">
       <image src="resource/dishes/<?=$dishes['image']?>" width=150></image>
@@ -59,14 +53,11 @@ $style = "resource/CSS/header.css";
       <form action="delete_item_in_cart.php" method="get">
         <button class="cart_delete" name="delete" value=<?=$dishes['id']?>>-</button>
       </form>
-    </div>
-    
+    </div> 
   </div>
   <?php
   $sum = $sum + ($cart_list[ $dishes['id'] ])*$dishes['price'];
   endwhile;
-   
-  
   ?>
   <div class="sum">
     сумма: <?php echo $sum ?> руб
@@ -75,7 +66,6 @@ $style = "resource/CSS/header.css";
     <button class="href_index_btn"><a class="href_index" href="index.php"> продолжить покупки </a> <imgage src="resource/emblems/cat4.jpg" width="100px" height="100px"></imgage></button><br>
     <button class="href_order_creation_btn"><a class="href_order_creation" href="order_creation.php"><imgage src="resource/emblems/cat5.jpg"></imgage> оформить заказ </a></button>
   </div>
-  
   </div>
 
 <?php
