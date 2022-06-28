@@ -10,8 +10,7 @@
     body{
       min-height: 100vh;
       display: flex;
-      flex-direction: column;
-      
+      flex-direction: column;     
     }
     main{
       flex-grow: 1;
@@ -36,29 +35,17 @@
 <body>
   <header>
     <!--Шапка-->
-    
     <nav class="left">
-      
     </nav>
-    
     <nav class="rigth">
-      
       <?php if(isset($_SESSION["user"])) : ?>
         <a href="account.php"><button> личный кабинет </button></a>
         <a href='exit.php'>
           <button> выход </button>
         </a>
-
       <?php else : ?>
-        <a href="admin.php"><button> вход</button> </a>
-        
-      <?php endif ?>
-      
-      
+        <a href="admin.php"><button> вход</button> </a>       
+      <?php endif ?>    
     </nav>
   </header>
   <main>
-    
-    
-    
-  
