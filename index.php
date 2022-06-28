@@ -4,14 +4,11 @@ session_start();
   $style = "resource/CSS/index.css";
   $script = "resource/javascript/index.js";
   include "header.php";
-  
   include "data_base.php";
-  
   
   $category_id = $_GET['category_id'];
   
   $sql = "SELECT * FROM category_menu";
-  
   
   if( isset($category_id) ) {
     $sql = "$sql WHERE id = $category_id";
@@ -26,14 +23,9 @@ session_start();
     $list[] = "<li><a class='href_category' href='index.php?category_id=$id' $class>$name</a></li>";
   }
   
-  
-  
-  
   $ul = implode(" / ", $list);
   echo "<ul class='category'>$ul</ul>";
-  
-  
-  
+   
 ?>
 <?php 
           //---------------------проверяю, заданна ли $_SESSION['cart_list']
@@ -42,7 +34,6 @@ session_start();
           }*/
           //print_r($_SESSION['cart_list'])
           ?>
-  
 
 <div class="dishes-container">
 <?php
@@ -77,15 +68,8 @@ session_start();
        <!-- <a data-id="<?php// echo $dishes['id']?>">
           добавить
         </a>--><!--<a href="cart.php?dishes['id']=<?php// echo dished['id']?>">добавить</a>-->
-      </div>
-      
-      
-      
+      </div> 
     </div>
-    
-
-  
-    
   
 <?php
   
@@ -95,7 +79,6 @@ session_start();
   
   <!--data-* Глобальные атрибуты образуют класс атрибутов, называемых пользовательскими атрибутами данных, которые позволяют обмениваться проприетарной информацией между HTML и его представлением DOM посредством сценариев.
   -->
-  
   
   <!--<sript src="/resource/javascript/basket.js"></sript>-->
 <?php
