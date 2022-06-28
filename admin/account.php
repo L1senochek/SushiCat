@@ -15,9 +15,6 @@ if( isset($user['id_manager']) ) {
   echo "<a href='edit_dishes.php'><button> Удаление блюд </button></a>";
   echo "<a href='orders_dishes.php'><button> Просмотр заказов </button></a>";
 }
-
-
 ?>
-
 <?php
 echo("<br></br><div class='hello_text_for_admin'> Вы вошли от имени администратора!</div>");
