@@ -9,8 +9,6 @@ echo "<a href='account.php'><button> Назад  </button></a>";
 echo "<a href='new_category.php'><button> Редактирование категорий блюд </button></a>";
 echo "<a href='new_dishes.php'><button> Внесение новых блюд </button></a>";
 
-
-
 include"data_base.php";
 
 $sql = "SELECT * FROM category_menu";
@@ -27,8 +25,7 @@ $result = $data_base->query( $sql );
   </p>
   <button> Внести изменения </button>
   </form>
-  <?php
-  
+  <?php  
 ?>
 </div>
 -------------------------------------------------------------------------
@@ -62,12 +59,9 @@ function tbody( $arr ){
       echo "<td> $value </td>";
     }
   echo "</tr>";
-}
-
-
+};
 ?>
 <br>-------------------------------------------------------------------------
-
 
 <?php
       $sql = 
@@ -84,6 +78,5 @@ function tbody( $arr ){
              "<td>{$result['weight']}</td>" .
              "<td><a href='?id={$result['id']}'>Изменить</a></td>" .
              '</tr>';
-      }
+      };
     ?>
-  
