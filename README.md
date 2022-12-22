@@ -1,5 +1,7 @@
 # SushiCat
 
+http://b9160422.beget.tech/diplom/sushicat/index.php
+
 The main reason for creating this project was to develop the Web Store - a Japanese food delivery store, "Sushi Cat". First of all, the functionality of this website implies the possibility of ordering Japanese cuisine dishes and obtaining background information on the range of dishes and prices for them. The second part was administrator access to the background office for further manipulations with the goods.
 
 Work plan:
